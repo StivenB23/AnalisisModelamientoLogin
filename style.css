@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #ffb5d1;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 900px;
+  height: 500px;
+  display: flex;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+/* .icon-book{
+    font-size: 4rem;
+} */
+
+.left-panel {
+  flex: 1;
+  background-color: #e7155e;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.left-panel .logo {
+  font-size:8rem;
+  margin-bottom: 20px;
+}
+
+.left-panel h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.left-panel p {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.right-panel {
+  flex: 1;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.login-box h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #111;
+}
+
+.icon {
+  color: #8e00f5;
+  margin-right: 8px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.btn {
+  background-color: #e7155e;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #c2134f;
+}
+
+.options {
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.options a {
+  color: #e7155e;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* 
+.circles::before,
+.circles::after {
+  content: '';
+  position: absolute;
+  border: 2px solid #9e28ff;
+  border-radius: 50%;
+}
+
+.circles::before {
+  width: 40px;
+  height: 40px;
+  top: 20px;
+  left: 30px;
+}
+
+.circles::after {
+  width: 70px;
+  height: 70px;
+  bottom: 20px;
+  right: 40px;
+} */
