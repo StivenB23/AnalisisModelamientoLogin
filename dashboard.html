@@ -18,8 +18,8 @@
       }
 
       .navbar {
-        background-color: #e6005a;
-        color: white;
+        background-color: #f6f6f6;
+        color: #040404;
         padding: 10px 30px;
         display: flex;
         justify-content: space-between;
@@ -34,10 +34,13 @@
       }
 
       .nav-links a {
-        color: white;
+        color: #040404;
         margin: 0 15px;
         text-decoration: none;
         font-weight: bold;
+        &:hover{
+          color: #E1035A;
+        }
       }
 
       .user-profile {
@@ -63,7 +66,7 @@
 
       .tag {
         background-color: #e6005a;
-        color: white;
+        color: #040404;
         font-weight: bold;
         display: inline-block;
         padding: 5px 10px;
@@ -114,7 +117,9 @@
   </head>
   <body>
     <header class="navbar">
-      <div class="logo"><i class="fas fa-book-open icon-book-header" ></i>Academic Quartz</div>
+      <div class="logo">
+        <img src="./img/LogoDashboard.png" width="180" alt="">
+      </div>
       <nav class="nav-links">
         <a href="#">Desempeños ⌄</a>
         <a href="#">Conceptos</a>
