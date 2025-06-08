@@ -118,7 +118,7 @@
   <body>
     <header class="navbar">
       <div class="logo">
-        <img src="./img/LogoDashboard.png" width="180" alt="">
+        <img src="/img/LogoDashboard.png" width="180" alt="">
       </div>
       <nav class="nav-links">
         <a href="#">Desempeños ⌄</a>
@@ -127,7 +127,7 @@
       </nav>
       <div class="user-profile">
         <img
-          src="./Avatar.png"
+          src="/img/Avatar.png"
           alt="Perfil"
           class="avatar"
         />
@@ -139,20 +139,20 @@
       <h1>Desempeños agregados</h1>
       <div class="tag">Dimensión Cognitiva</div>
 
-      <div class="card">
-          <div class="card-footer">
-              <span class="periodo">Periodo 1</span>
-              <div class="icons">
-                  <button class="edit">✏️</button>
-                  <button class="delete">🗑️</button>
+      <% desempenos.forEach(desempeno => { %>
+            <div class="card">
+                <div class="card-footer">
+                    <span class="periodo">Periodo <%= desempeno.periodo %></span>
+                    <div class="icons">
+                        <button class="edit">✏️</button>
+                        <button class="delete">🗑️</button>
+                    </div>
                 </div>
+                <p>
+                    <%= desempeno.descripcion %>
+                </p>
             </div>
-            <p>
-              Lorem Ipsum es simplemente el texto de relleno de las imprentas y
-              archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de
-              las industrias desde el año 1500
-            </p>
-      </div>
+        <% }); %>
       <div class="card">
           <div class="card-footer">
               <span class="periodo">Periodo 1</span>
